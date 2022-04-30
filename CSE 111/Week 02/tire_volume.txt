@@ -1,3 +1,0 @@
-Data for tire volumes stored as follows (date, width, aspect ratio, diameter, volume, [tire type, tire price, phone number])
-22-04-30, 185, 50, 14, 24.09
-22-04-30, 205, 60, 15, 39.92
