@@ -3,31 +3,21 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-:root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #3f78a2;
-    --secondary-color: #8CCBE6;
-    --accent1-color: #9B5B12;
-    --accent2-color: #F1F5F9;
 
-    /* change the values below to your chosen font(s) */
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif;
+/*
+Color palette
 
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #3f78a2;
-    /* headlines on a white background */
-    --headline-color-on-color: #F1F5F9;
-    /* headlines on a colored background */
-    --paragraph-color-on-white: #3f78a2;
-    /* paragraph text on a white background */
-    --paragraph-color-on-color: #F1F5F9;
-    /* paragraph text on a colored background */
-    --paragraph-background-color: #3f78a2;
-    --nav-link-color: #F1F5F9;
-    --nav-background-color: #3f78a2;
-    --nav-hover-link-color: #F1F5F9;
-    --nav-hover-background-color: #9B5B12;
+primary-color: #3f78a2 (darker Blue)
+secondary-color: #8CCBE6 (light Blue)
+accent1-color: #9B5B12 (shade of Brown)
+accent2-color: #F1F5F9 (tinted White)
+*/
+
+
+/* Id selectors */
+#background {
+    height: 725px;
+    background-color: #8CCBE6;
 }
 
 #content {
@@ -35,10 +25,8 @@
     margin: 0 auto;
 }
 
-nav a {
-    text-align: center;
-    color: #F1F5F9;
-    text-decoration: none;
+#hero-img {
+    width: 100%;
 }
 
 #hero-msg h1,
@@ -46,31 +34,7 @@ nav a {
     text-align: center;
 }
 
-.button-box {
-    text-align: center;
-}
-
-main section {
-    text-align: center;
-}
-
-#background {
-    height: 725px;
-    background-color: #8CCBE6;
-}
-
-body {
-    background-color: #F1F5F9;
-}
-
-header {
-    background-color: #3f78a2;
-}
-
-nav a:hover {
-    background-color: #9B5B12;
-    color: #F1F5F9;
-}
+/* Class selectors*/
 
 .book,
 .join {
@@ -85,20 +49,24 @@ nav a:hover {
     color: #F1F5F9;
 }
 
-.msg {
-    background-color: #3f78a2;
+.button-box {
+    text-align: center;
 }
 
-footer {
-    background-color: #3f78a2;
+.icon {
+    width: 80px;
 }
 
 .home-title {
     color: #F1F5F9;
 }
 
-h4 {
-    color: #8CCBE6;
+.logo {
+    width: 80px;
+}
+
+.msg {
+    background-color: #3f78a2;
 }
 
 .msg h2,
@@ -106,8 +74,14 @@ h4 {
     color: #F1F5F9;
 }
 
-footer h3 {
-    color: #F1F5F9;
+/* Non-targeted element selectors */
+
+body {
+    background-color: #F1F5F9;
+}
+
+footer {
+    background-color: #3f78a2;
 }
 
 footer a {
@@ -119,13 +93,33 @@ footer a:hover {
     color: #9B5B12;
 }
 
-.icon {
-    width: 80px;
+footer h3 {
+    color: #F1F5F9;
 }
 
-#hero-img {
-    width: 100%;
-}
 footer h3 a:hover {
     text-decoration: underline;
+}
+
+header {
+    background-color: #3f78a2;
+}
+
+h4 {
+    color: #8CCBE6;
+}
+
+main section {
+    text-align: center;
+}
+
+nav a {
+    text-align: center;
+    color: #F1F5F9;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #9B5B12;
+    color: #F1F5F9;
 }
