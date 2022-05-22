@@ -5,20 +5,26 @@
 
 
 /*
+Font
+
+heading-font: "IM Fell French Canon SC";
+paragraph-font: Lato, Helvetica, sans-serif;
+
 Color palette
 
-primary-color: #3f78a2 (darker Blue)
-secondary-color: #8CCBE6 (light Blue)
-accent1-color: #9B5B12 (shade of Brown)
+primary-color: #427db8 (darker Blue)
+secondary-color: #90a9d1 (light Blue)
+accent1-color: #b0793a (shade of Brown)
 accent2-color: #F1F5F9 (tinted White)
 */
 
 
-/* Id selectors */
+/* Id selectors */ 
 
 #background {
     height: 725px;
-    background-color: #8CCBE6;
+    background-color: #90a9d1;
+    margin: 50px 0px;
 }
 
 #content {
@@ -28,38 +34,65 @@ accent2-color: #F1F5F9 (tinted White)
 
 #hero-img {
     width: 100%;
+    padding: 0;
 }
 
+#hero {
+    margin: 0;
+    border: 1px solid #90a9d1;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 #hero-msg h1,
 #hero-msg h4 {
     text-align: center;
+}
+
+#logo-link {
+    padding-top: 5px;
 }
 
 /* Class selectors*/
 
 .book,
 .join {
-    background-color: #3f78a2;
+    background-color: #90a9d1;
     color: #F1F5F9;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,
 .join:hover {
-    background-color: #9B5B12;
+    background-color: #b0793a;
     color: #F1F5F9;
 }
 
 .button-box {
     text-align: center;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
+.card-img {
+    border: 10px solid  #90a9d1;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.home-grid {
+    margin: 100px 0px;
 }
 
 .home-title {
-    color: #F1F5F9;
+    color: #427db8;
+    font-size: 3em;
 }
 
 .logo {
@@ -67,23 +100,50 @@ accent2-color: #F1F5F9 (tinted White)
     height: 80px;
 }
 
-.msg {
-    background-color: #3f78a2;
+.mountains {
+    box-sizing: border-box;
+    margin: 50px 0px;
+    padding: 0px;
 }
 
-.msg h2,
+.msg {
+    background-color: #427db8;
+    line-height: 1.5em;
+    padding: 35px;
+    margin: 50px 0px;
+}
+
+.msg h2 {
+    color: #F1F5F9;
+    font-size: 1.5em;
+}
+
 .msg p {
     color: #F1F5F9;
+    font-size: 1em;
+    padding-bottom: 15px;
 }
 
-/* Non-targeted element selectors */
+.social img {
+    padding: 0;
+    margin: 0 10px;
+    border: 5px solid #90a9d1;
+    border-radius: 5px;
+}
+
+/* Element selectors without classes or id's */
 
 body {
     background-color: #F1F5F9;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 footer {
-    background-color: #3f78a2;
+    background-color: #427db8;
+    padding: 25px 50px;
 }
 
 footer a {
@@ -92,7 +152,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #9B5B12;
+    color: #b0793a;
 }
 
 footer h3 {
@@ -104,24 +164,42 @@ footer h3 a:hover {
 }
 
 header {
-    background-color: #3f78a2;
+    background-color: #427db8;
+}
+
+h1,
+h2 {
+    font-family: "IM Fell French Canon SC";
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
 }
 
 h4 {
-    color: #8CCBE6;
+    color: #90a9d1;
+    font-size: 1.5em;
 }
 
 main section {
     text-align: center;
+    margin: 100px 0;
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 nav a {
     text-align: center;
     color: #F1F5F9;
     text-decoration: none;
+    text-align: center;
+    padding: 35px;
 }
 
 nav a:hover {
-    background-color: #9B5B12;
+    background-color: #b0793a;
     color: #F1F5F9;
 }
