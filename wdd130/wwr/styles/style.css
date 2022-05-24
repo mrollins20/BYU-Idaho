@@ -131,6 +131,11 @@ accent2-color: #F1F5F9 (tinted White)
     border-radius: 5px;
 }
 
+.social img:hover {
+    border: 5px solid #b0793a;
+    border-radius: 5px;
+}
+
 /* Element selectors without classes or id's */
 
 body {
