@@ -11,15 +11,23 @@ header {
     max-width: 1500px;
     text-align: center;
     margin: 50px auto;
-    background-color: darkgrey;
+    background-color: lightgrey;
     border: 5px solid black;
     padding: 15px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 nav a {
     background-color: darkgrey;
     color: black;
     font-size: 25px;
+    border: 2px solid black;
+    padding: 10px;
 }
 
 nav a:hover {
