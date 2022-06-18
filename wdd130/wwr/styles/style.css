@@ -49,6 +49,13 @@ accent2-color: #F1F5F9 (tinted White)
     margin-top: -100px;
 }
 
+#hero2 {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
 #hero-box {
     grid-column: 1/4;
     grid-row: 1/3;
@@ -72,10 +79,43 @@ accent2-color: #F1F5F9 (tinted White)
     font-size: 40px;
 }
 
+#hero-msg.rates-title {
+    text-align: center;
+    color: #F1F5F9;
+}
+
 #logo-link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
+}
+
+#rates {
+    align-self: center;
+    background-color: #427db8;
+    grid-column: 1/11;
+    grid-row: 2/3;
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border: 5px solid #427db8;
+    border-radius: 5px;
+}
+
+#rates-background {
+    height: 725px;
+    background-color: #90a9d1;
+    margin: 50px 0px;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+#rates-msg {
+    text-align: center;
+    grid-column: 1/11;
+    grid-row: 1/2;
 }
 
 /* Class selectors*/
@@ -103,6 +143,26 @@ accent2-color: #F1F5F9 (tinted White)
     border-radius: 15px;
 }
 
+.call {
+    background-color: #90a9d1;
+    color: #F1F5F9;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px;
+    grid-column: 1/4;
+}
+
+.call p {
+    align-self: center;
+    justify-self: center;
+    grid-row: 1/3;
+    grid-column: 2/6;
+}
+
 .camping-card {
     grid-column: 5/7;
     grid-row: 2/3;
@@ -120,9 +180,28 @@ accent2-color: #F1F5F9 (tinted White)
     transform: scale(1.1);
 }
 
+.contact-img {
+    width: 60px;
+    padding: 0;
+    margin: 5px;
+    align-self: center;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
 .icon {
     width: 80px;
     padding-top: 10px;
+}
+
+.info {
+    color: #F1F5F9;
+    text-align: left;
+    padding: 0px;
+    margin: 25px 0px;
+    font-size: 20px;
+    line-height: 25px;
+    grid-column: 1/4;
 }
 
 .home-grid {
@@ -141,7 +220,8 @@ accent2-color: #F1F5F9 (tinted White)
     height: 80px;
 }
 
-.mountains {
+.mountains,
+.rates-img {
     box-sizing: border-box;
     margin: 50px 0px;
     padding: 0px;
@@ -159,6 +239,21 @@ accent2-color: #F1F5F9 (tinted White)
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #F1F5F9;
+    color: #F1F5F9;
+}
+
+.rates-msg {
+    background-color: #427db8;
+    line-height: 1.5em;
+    padding: 35px;
+    margin: 50px 0px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #F1F5F9;
+    color: #F1F5F9;
+    display: grid;
+    grid-template-columns: 75px auto 75px;
+    grid-template-rows: auto;
 }
 
 .msg:hover {
@@ -176,9 +271,38 @@ accent2-color: #F1F5F9 (tinted White)
     padding-bottom: 15px;
 }
 
+.msg-box {
+    background-color: #427db8;
+    line-height: 1.5em;
+    padding: 5px;
+    margin: 10px 50px;
+    border: 5px solid #90a9d1;
+    border-radius: 5px;
+}
+
+.msg-box h4 {
+    color: #F1F5F9;
+}
+
 .rapids-card {
     grid-column: 8/10;
     grid-row: 2/3;
+}
+
+.rates-grid {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.rates-msg h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.rates-title {
+    color: #F1F5F9;
+    font-size: 3em;
 }
 
 .rivers-card {
@@ -196,6 +320,27 @@ accent2-color: #F1F5F9 (tinted White)
 .social img:hover {
     border: 5px solid #b0793a;
     border-radius: 5px;
+}
+
+.trip-header {
+    color: #F1F5F9;
+}
+
+.trip-msg {
+    color: #F1F5F9;
+    grid-column: 1/4;
+}
+
+
+.trip-info,
+.trip-info2,
+.trip-info3,
+.trip-info4 {
+    grid-column: 1/4;
+    color: #F1F5F9;
+    border: 5px solid #90a9d1;
+    border-radius: 5px;
+    margin: 15px;
 }
 
 /* Element selectors without classes or id's */
@@ -323,5 +468,35 @@ nav a:hover {
     }
     footer {
         margin-top: 25px;
+    }
+    .call {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .call p {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contact-img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        margin: auto;
+    }
+    #rates-background {
+        grid-column: 1/11;
+        grid-row: 3/4;
+        align-self: center;
+    }
+    .rates-img {
+        grid-column: 2/6;
+        grid-row: 3/4;
+        align-self: center;
+    }
+    .rates-msg {
+        grid-column: 6/10;
+        grid-row: 3/4;
+        align-self: center;
     }
 }
