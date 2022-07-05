@@ -233,7 +233,7 @@ img {
 main {
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(25, 1fr);
+    grid-template-columns: repeat(24, 1fr);
     grid-template-rows: auto;
     grid-column: 1/2;
     grid-row: 2/3;
