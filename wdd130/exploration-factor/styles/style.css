@@ -1,0 +1,312 @@
+/*css for index.html on the Exploration Factor website.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/* Font
+heading-font: Play, sans-serif;
+paragraph-font: Lato, Helvetica, sans-serif
+*/
+
+/* Color Palette
+#598950 - primary color
+#A43312 - secondary color
+#AABD8C - accent1 color
+#deaf1d - accent2 color 
+#3b3b3b - darkgrey (for backgrounds and to create negative space)
+*/
+
+/* Basic styling guide
+headline-color-on-white: #598950;  headlines on a white background
+headline-color-on-color: #AABD8C; headlines on a colored background
+paragraph-color-on-white: #598950; paragraph text on a white background
+paragraph-color-on-color: #deaf1d; paragraph text on a colored background
+paragraph-background-color: #598950  ;
+nav-link-color: #598950;
+nav-background-color: #AABD8C;
+nav-hover-link-color: #A43312;
+nav-hover-background-color: #deaf1d;
+*/
+
+
+/*Id Selectors*/
+
+#logo-link {
+    background-color: #AABD8C;
+    grid-column: 1/2;
+    height: 100%;
+    margin: auto;
+    width: 45%;
+}
+
+#nav-bar {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    height: auto;
+    padding: 0%;
+    margin: auto;
+    width: 80%;
+}
+
+/*Class Selectors*/
+
+.button-box {
+    background-color: #598950;
+    border-radius: 5px;
+    color: white;
+    font-family: Play, sans-serif;
+    height: 20px;
+    padding: 20px;
+    margin: 25px auto;
+    width: 100px;
+}
+
+.button-box:hover {
+    background-color: #deaf1d;
+    color: #A43312;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.games-invite {
+    background-color: #AABD8C;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 1/25;
+    grid-row: 4/5;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.games-invite img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    margin: auto;
+}
+
+.history-invite {
+    background-color: #AABD8C;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-column: 1/25;
+    grid-row: 3/4;
+    margin: 50px auto;
+    padding: 20px;
+    width: 70%;
+}
+
+.history-text,
+.games-text {
+    font-size: 1.25em;
+}
+
+.site-msg {
+    background-color: #AABD8C;
+    color: #598950;
+    font-family: Play, sans-serif;
+    font-size: 2em;
+    grid-column: 1/25;
+    grid-row: 1/2;
+    margin: 50px auto;
+    padding: 25px;
+    width: 80%;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 0%;
+}
+
+.social-img {
+    background-color: #AABD8C;
+    border: #AABD8C 3px solid;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 0%;
+}
+
+.social-img:hover {
+    background-color: #deaf1d;
+    border: #deaf1d 3px solid;
+    border-radius: 5px;
+}
+
+/*Basic Selectors*/
+
+body {
+    align-items: center;
+    background-color: white;
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 4em;
+    text-align: center;
+}
+
+footer {
+    align-items: center;
+    background-color: #598950;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 50px;
+    margin: auto;
+    width: 80%;
+}
+
+footer a {
+    color: #F1F5F9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #deaf1d;
+}
+
+footer h3 {
+    color: #F1F5F9;
+}
+
+footer h3 a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #598950;
+    font-family: Play, sans-serif;
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+}
+
+header {
+    background-color: #598950;
+    width: 80%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+main {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1/25;
+    grid-template-rows: auto;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: auto;
+    width: 80%;
+}
+
+main img {
+    grid-column: 1/25;
+    grid-row: 2/3;
+    margin: 50px auto;
+    width: 70%;
+}
+
+nav {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: space-around;
+}
+
+nav a {
+    background-color: #AABD8C;
+    color: #598950;
+    font-family: Play, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 45px;
+}
+
+nav a:hover {
+    background-color: #deaf1d;
+    color: #A43312;
+}
+
+p {
+    color: #598950;
+    font-family: Lato, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+/* CSS for smaller devices */
+
+@media screen and (max-width: 900px) {
+
+    body,
+    main,
+    .logo,
+    #logo-link {
+        display: block;
+        height: auto;
+        justify-content: center;
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+    }
+
+    nav,
+    footer,
+    header,
+    #nav-bar {
+        flex-direction: column;
+        margin: 10px auto;
+        padding: 20px;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 30px;
+        margin: 20px auto;
+        width: 80%;
+    }
+    
+    .games-invite,
+    .history-invite,
+    .site-msg {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        margin: 10px auto;
+        padding: 20px;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 10px auto;
+        width: 80%;
+    }
+}
