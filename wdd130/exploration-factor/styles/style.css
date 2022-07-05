@@ -40,6 +40,10 @@ nav-hover-background-color: #deaf1d;
     width: 45%;
 }
 
+#logo-link:hover {
+    background-color: #deaf1d;
+}
+
 #nav-bar {
     align-items: center;
     display: grid;
@@ -67,6 +71,20 @@ nav-hover-background-color: #deaf1d;
 .button-box:hover {
     background-color: #deaf1d;
     color: #A43312;
+}
+
+.button-box a {
+    color: white;
+    font-family: Play, sans-serif;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-box a:hover {
+    background-color: #deaf1d;
+    color: #A43312;
+    text-align: center;
 }
 
 .logo {
@@ -243,6 +261,7 @@ nav a {
     height: 100%;
     margin: 0;
     padding: 45px;
+    text-decoration: none;
 }
 
 nav a:hover {
