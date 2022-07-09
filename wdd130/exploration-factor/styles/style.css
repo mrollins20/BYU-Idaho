@@ -32,6 +32,18 @@ nav-hover-background-color: #deaf1d;
 
 /*Id Selectors*/
 
+#games-table {
+    background-color: #AABD8C;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 3/24;
+    grid-row: 4/5;
+    padding: 0%;
+    margin: 50px auto;
+    width: 100%;
+}
+
 #logo-link {
     background-color: #AABD8C;
     grid-column: 1/2;
@@ -87,6 +99,41 @@ nav-hover-background-color: #deaf1d;
     text-align: center;
 }
 
+.content-box {
+    align-items: center;
+    background-color: #AABD8C;
+    display: grid;
+    grid-column: 3/24;
+    grid-row: 2/3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 50px auto;
+    padding: 0%;
+}
+.content-box img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 50px 50px;
+}
+.content-text {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.content-box2 {
+    background-color: #AABD8C;
+    display: grid;
+    grid-column: 3/24;
+    grid-row: 5/6;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 50px auto;
+}
+.content-box2 img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
 .logo {
     height: 100px;
     width: 100px;
@@ -123,9 +170,49 @@ nav-hover-background-color: #deaf1d;
     width: 70%;
 }
 
+.history-invite2 {
+    align-items: center;
+    background-color: #AABD8C;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 50px auto;
+    padding: 20px;
+    width: 70%;
+}
+.history-invite2 h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.history-invite2 .button-box {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
 .history-text,
 .games-text {
     font-size: 1.25em;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #AABD8C;
+}
+
+.recommendation-text {
+    background-color: #AABD8C;
+    grid-column: 3/24;
+    grid-row: 3/4;
 }
 
 .site-msg {
@@ -133,7 +220,7 @@ nav-hover-background-color: #deaf1d;
     color: #598950;
     font-family: Play, sans-serif;
     font-size: 2em;
-    grid-column: 1/25;
+    grid-column: 1/26;
     grid-row: 1/2;
     margin: 50px auto;
     padding: 25px;
@@ -161,6 +248,66 @@ nav-hover-background-color: #deaf1d;
     border-radius: 5px;
 }
 
+.text {
+    color: white;
+    font-family: Play;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.metroid-box,
+.castlevania-box,
+.ori-box,
+.dead-cells-box,
+.hollow-knight-box,
+.grime-box {
+    background-color: #AABD8C;
+    border: 3px solid #598950;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 20px;
+    padding: 0%;
+    position: relative;
+    width: auto;
+    z-index: .9;
+}
+.metroid-box img,
+.castlevania-box img,
+.ori-box img,
+.dead-cells-box img,
+.hollow-knight-box img,
+.grime-box img {
+    border: 3px solid #598950;
+    border-radius: 5px;
+    justify-self: center;
+    height: 200px;
+    width: 90%;
+    margin: 10px auto;
+    padding: 0%;
+    z-index: .8;
+}
+
+.metroid-box:hover .overlay,
+.castlevania-box:hover .overlay,
+.ori-box:hover .overlay,
+.dead-cells-box:hover .overlay,
+.hollow-knight-box:hover .overlay,
+.grime-box:hover .overlay {
+    border: 3px solid #598950;
+    margin: 0%;
+    opacity: 1;
+    transform: scale(1.5);
+    z-index: 1;
+}
+
 /*Basic Selectors*/
 
 body {
@@ -172,7 +319,6 @@ body {
     grid-template-rows: auto;
     max-width: 1900px;
     margin: 0 auto;
-    padding: 4em;
     text-align: center;
 }
 
@@ -233,7 +379,7 @@ img {
 main {
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
+    grid-template-columns: repeat(25, 1fr);
     grid-template-rows: auto;
     grid-column: 1/2;
     grid-row: 2/3;
@@ -327,5 +473,47 @@ p {
         flex-direction: column;
         margin: 10px auto;
         width: 80%;
+    }
+
+    #games-table {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .content-box,
+    .recommendation-text,
+    #games-table {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        justify-content: center;
+        margin: 10px auto;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .content-box2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        margin: 10px auto;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .content-box2 img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 90%;
+        margin: auto;
+    }
+
+    .history-invite2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: auto;
+        padding: 0%;
     }
 }
