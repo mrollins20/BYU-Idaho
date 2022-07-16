@@ -44,6 +44,29 @@ nav-hover-background-color: #deaf1d;
     width: 100%;
 }
 
+#info-box {
+    background-color: #AABD8C;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#info-box p {
+    margin: 10px auto;
+}
+
+#info-box span {
+    color: #A43312;
+    font-family: Play;
+}
+
+#info-box-border {
+    background-color: #598950;
+    grid-column: 3/24;
+    grid-row: auto;
+    margin: 50px auto;
+    padding: 20px;
+}
+
 #logo-link {
     background-color: #AABD8C;
     grid-column: 1/2;
@@ -156,6 +179,53 @@ nav-hover-background-color: #deaf1d;
     grid-column: 1/2;
     grid-row: 1/4;
     margin: auto;
+}
+
+.history-box,
+.history-box2 {
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: 1fr;
+    grid-column: 3/24;
+    grid-row: auto;
+    margin: 50px auto;
+}
+
+.history-box img {
+    grid-column: 1/10;
+    grid-row: 1/2;
+    height: 288px;
+    width: 100%;
+    padding: 0%;
+}
+.history-box p {
+    background-color: #AABD8C;
+    grid-column: 11/22;
+    grid-row: 1/2;
+    padding: 100px 20px;
+}
+
+.history-box2 img {
+    grid-column: 1/12;
+    grid-row: 1/2;
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+}
+.history-box2 .hist-box-content {
+    align-items: center;
+    background-color: #AABD8C;
+    display: flex;
+    flex-direction: column;
+    grid-column: 13/22;
+    grid-row: 1/2;
+    margin: 0%;
+    padding: 25px;
+}
+
+.hist-box-content p {
+    font-family: Play;
 }
 
 .history-invite {
@@ -430,6 +500,7 @@ p {
     main,
     .logo,
     #logo-link {
+        align-items: center;
         display: block;
         height: auto;
         justify-content: center;
@@ -515,5 +586,57 @@ p {
         grid-row: 2/3;
         margin: auto;
         padding: 0%;
+    }
+
+    .history-box2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column: 1/26;
+        padding: 20px;
+        margin: 0%;
+        width: 100%;
+    }
+
+    .history-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0%;
+        margin: auto;
+        width: 100%;
+    }
+
+    .history-box img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: auto;
+        padding: 20px;
+        width: 100%;
+    }
+    .history-box p {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: auto;
+        width: 100%;
+    }
+
+    .history-box2 img{
+        width: 90%;
+        margin: 0%;
+    }
+
+    .hist-box-content {
+        display: none;
+        grid-column: 1/11;
+        grid-row: 2/3;
+    }
+    .hist-box-content p {
+        width: auto;
+    }
+
+    #info-box-border {
+        width: 100%;
+        margin: 0%;
     }
 }
