@@ -347,7 +347,7 @@ nav-hover-background-color: #deaf1d;
     padding: 0%;
     position: relative;
     width: auto;
-    z-index: .9;
+    z-index: 1;
 }
 .metroid-box img,
 .castlevania-box img,
@@ -362,7 +362,16 @@ nav-hover-background-color: #deaf1d;
     width: 90%;
     margin: 10px auto;
     padding: 0%;
-    z-index: .8;
+    z-index: 1;
+}
+
+.metroid-box:hover,
+.castlevania-box:hover,
+.ori-box:hover,
+.dead-cells-box:hover,
+.hollow-knight-box:hover,
+.grime-box:hover {
+    z-index: 2;
 }
 
 .metroid-box:hover .overlay,
@@ -375,7 +384,7 @@ nav-hover-background-color: #deaf1d;
     margin: 0%;
     opacity: 1;
     transform: scale(1.5);
-    z-index: 1;
+    z-index: 3;
 }
 
 /*Basic Selectors*/
